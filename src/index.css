@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+.green-button {
+  background-color: #4CAF50; /* A pleasant shade of green */
+  color: white; /* White text for good contrast */
+  padding: 10px 20px; /* Spacing inside the button */
+  border: none; /* No default border */
+  border-radius: 5px; /* Slightly rounded corners */
+  cursor: pointer; /* Changes cursor to a pointer on hover */
+  font-size: 16px; /* Readable font size */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline if it's a link styled as a button */
+  display: inline-block; /* Allows padding and margin to work correctly */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+.green-button:hover {
+  background-color: #45a049; /* A slightly darker green on hover */
+  transform: translateY(-1px); /* Little lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+.yellow-button {
+  /* Positioning */
+  position: fixed; /* Makes the element positioned relative to the viewport */
+  top: 20px;       /* 20 pixels from the top edge of the viewport */
+  right: 20px;     /* 20 pixels from the right edge of the viewport */
+  
+  background-color: #FFC107; /* A vibrant yellow, common in material design */
+  color: #333333; /* Dark grey/black text for good readability on yellow */
+  padding: 10px 20px; /* Spacing inside the button */
+  border: none; /* No default border */
+  border-radius: 5px; /* Slightly rounded corners */
+  cursor: pointer; /* Changes cursor to a pointer on hover */
+  font-size: 16px; /* Readable font size */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline if it's a link styled as a button */
+  display: inline-block; /* Allows padding and margin to work correctly */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+.yellow-button:hover {
+  background-color: #FFA000; /* A slightly darker/more orange yellow on hover */
+  transform: translateY(-1px); /* Little lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+.search-bar-container {
+  display: flex; /* Use flexbox to align input and button horizontally */
+  align-items: center; /* Vertically center items */
+  width: 100%; /* Or a specific width, e.g., 400px */
+  max-width: 500px; /* Max width for larger screens */
+  margin: 20px auto; /* Center the search bar on the page */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px; /* Slightly rounded container */
+  overflow: hidden; /* Ensures content respects border-radius */
+  background-color: #fff; /* White background for the container */
+}
+
+/* Styles for the Search Input Field */
+.search-input {
+  flex-grow: 1; /* Allows the input to take up available space */
+  padding: 12px 15px; /* Padding inside the input field */
+  border: none; /* Remove default border */
+  outline: none; /* Remove outline on focus (we'll add our own visual cue) */
+  font-size: 16px; /* Readable font size */
+  font-family: 'Arial', sans-serif; /* A clear, common font */
+  color: #333; /* Darker text color */
+}
+
+/* Placeholder text styling */
+.search-input::placeholder {
+  color: #888;
+}
+
+/* Focus state for the input */
+.search-input:focus {
+  border: none; /* Ensure no border appears on focus if one was default */
+  box-shadow: none; /* Remove any default box-shadow on focus */
+  /* You can add a subtle border or ring effect directly on the container or input if needed */
+}
+
+/* Basic Red Button Styles */
+.red-button {
+  background-color: #dc3545; /* A standard, impactful red */
+  color: white; /* White text for strong contrast */
+  padding: 10px 20px; /* Spacing inside the button */
+  border: none; /* No default border */
+  border-radius: 5px; /* Slightly rounded corners */
+  cursor: pointer; /* Changes cursor to a pointer on hover */
+  font-size: 16px; /* Readable font size */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline if it's a link styled as a button */
+  display: inline-block; /* Allows padding and margin to work correctly */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+.red-button:hover {
+  background-color: #c82333; /* A slightly darker red on hover */
+  transform: translateY(-1px); /* Little lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+/* Active (Click) Effect */
+.red-button:active {
+  background-color: #bd2130; /* Even darker red when clicked */
+  transform: translateY(0); /* Button pushes down */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow when clicked */
+}
+
+.stock-list-container {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stock-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stock-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.stock-item:last-child {
+  border-bottom: none;
+}
+
+.stock-name {
+  flex-grow: 1;
+  font-weight: bold;
+  color: #ffffff;
+}

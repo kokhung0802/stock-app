@@ -1,0 +1,67 @@
+# Node.js
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+/tmp
+/out
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local # Catches all .env files that are local overrides
+.env
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.bak
+*.swo
+
+# Supabase
+# Local Supabase development artifacts
+# These are generated when you run `supabase start` or `supabase init` locally.
+# Contains local database files, logs, and potentially API keys for local dev.
+/supabase/.temp/
+/supabase/db/
+/supabase/migrations/*.sql # Migrations should generally be committed if they are for shared schema changes
+# but if you have temporary local migration files, you might want to ignore them.
+# Consider committing schema migrations and only ignoring transient ones.
+/supabase/seed.sql # Seed data might be sensitive or change frequently
+
+# Supabase specific credentials/API keys (usually in .env files, but double-check)
+# If you hardcode any keys *outside* .env, make sure they are not committed.
+# For example, if you had a file `src/supabase-config.js` with direct keys:
+# src/supabase-config.js
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Mac specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
